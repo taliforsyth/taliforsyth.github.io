@@ -9,6 +9,7 @@ h1{
     font-size: 42px;
     line-height: 75px;
     text-transform: uppercase;
+    text-align: center;
 
     color: #B36A5E;
 }
@@ -136,55 +137,68 @@ hr {
 .navbar {
     display: flex;
     align-items: center;
-    padding: 20px;
-    background-color: #F6F1E3;
-    position: sticky;
+    padding: 5px;
+    background-color: #e5dec8;
+    justify-content: space-around;
 }
   
 .navbar a {
     color:#B36A5E;
-    padding: 14px 20px;
+    padding: 5px;
     text-decoration: none;
     text-align: center;
-    justify-content: space-evenly;
 }
   
 .navbar a:hover {
-    color:#5F634F ;
+    color:#5F634F;
 }
 
-.row {  
+.image {
+    list-style: none;
+    margin: 5px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1px;
+}
+
+.other{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1px;
+    justify-content: space-around;
+}
+
+.other2{
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1px;
+    justify-content: space-around;
+}
+
+.contact{
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
 }
 
-.image{
-    display: flex;
-    flex-wrap: wrap;
-    padding: 2px;
-}
-
-.column {
-    flex: 50%;
-    max-width: 50%;
-    padding: 0 4px;
-  }
-
-@media (max-width: 400px) {
-    .row, .navbar {   
-      flex-direction: column;
+@media (max-width: 400px){
+    .navbar{
+        flex-direction: column;
     }
 }
 
-@media (min-width: 401px) {
-    .row, .navbar {   
-      flex-direction: row;
+@media (max-width: 400px){
+    .image, .other, .other2{
+        list-style: none;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 1px;
+        justify-content: space-around;
     }
 }
-
-@media screen and (max-width: 400px) {
-    .column {
-      flex: 100%;
-      max-width: 100%;
-    }
-  }
