@@ -163,8 +163,6 @@ hr {
 
 .other{
     list-style: none;
-    margin: 0;
-    padding: 0;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 1px;
@@ -187,14 +185,14 @@ hr {
     gap: 6px;
 }
 
-@media (max-width: 400px){
+@media (max-width: 500px){
     .navbar{
         flex-direction: column;
     }
 }
 
-@media (max-width: 400px){
-    .image, .other, .other2{
+@media (max-width: 500px){
+    .image, .other, .other2, .home{
         list-style: none;
         display: grid;
         grid-template-columns: repeat(1, 1fr);
