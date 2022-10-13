@@ -27,7 +27,7 @@ function result() {
 
   if(customName.value !== '') {
     const name = customName.value;
-    newStory = newStory.replace("Bob", customName.value)
+    newStory = newStory.replace("Amanda Bynes", customName.value)
   }
 
   if(document.getElementById("uk").checked) {
