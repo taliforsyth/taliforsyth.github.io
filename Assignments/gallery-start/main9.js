@@ -5,7 +5,7 @@ const btn = document.querySelector('button');
 const overlay = document.querySelector('.overlay');
 
 /* Declaring the array of image filenames */
-const images = ["seamansres.jpg", "longs+meeker.jpg", "ski.jpg", "la.jpg", "goggles.jpg"]
+const images = ["images/seamansres.jpg", "images/longs+meeker.jpg", "images/ski.jpg", "images/la.jpg", "images/goggles.jpg"]
 
 
 /* Declaring the alternative text for each image file */
