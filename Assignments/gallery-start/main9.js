@@ -10,11 +10,11 @@ const images = ["images/seamansres.jpg", "images/longs+meeker.jpg", "images/ski.
 
 /* Declaring the alternative text for each image file */
 const alts = {
-    'seamansres.jpg' :'hiking in the fall', 
-    'longs+meeker.jpg' : 'long peak and mount meeker at sunrise', 
-    'ski.jpg' : 'snowboarders taking a break', 
-    'la.jpg' : 'pretty building during sunset', 
-    'goggles.jpg' : 'girl wearing goggles'}
+    'images/seamansres.jpg' :'hiking in the fall', 
+    'images/longs+meeker.jpg' : 'long peak and mount meeker at sunrise', 
+    'images/ski.jpg' : 'snowboarders taking a break', 
+    'images/la.jpg' : 'pretty building during sunset', 
+    'images/goggles.jpg' : 'girl wearing goggles'}
 
 /* Looping through images */
 
@@ -30,15 +30,15 @@ for (const image of images) {
 }
 
 /* Wiring up the Darken/Lighten button */
-btn.addEventListener('click', () =>{
+btn.addEventListener('click', () => {
     const btnClass = btn.getAttribute('class');
     if (btnClass === 'dark') {
-        btn.setAttribute('class', 'light');
-        btn.textContent = 'Lighten';
-        overlay.sytle.backgroundColorado = 'rgba(0,0,0,0.5)';
+      btn.setAttribute('class','light');
+      btn.textContent = 'Lighten';
+      overlay.style.backgroundColor = 'rgba(0,0,0,0.5)';
     } else {
-        btn.setAttribute('class', 'dark');
-        btn.textContent = 'Darken';
-        overlay.style.backgroundColorado = 'rgba(0,0,0,0)';
+      btn.setAttribute('class','dark');
+      btn.textContent = 'Darken';
+      overlay.style.backgroundColor = 'rgba(0,0,0,0)';
     }
-});
+  });
