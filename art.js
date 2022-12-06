@@ -20,7 +20,7 @@ btn.addEventListener("click", () => {
 
 function generate() {
  
-  const colors = ["#BDC696", "#554245", "#773344", "#2A324B", "#CABAC8", "#BFDBF7", "#2E6171", "#CE8147", "#650D1B", "#FAA4BD", "#3C493F", "#9BB291"];
+  const colors = ["#C9CBA3", "#E4D6A6", "#FFE1A8", "#E26D5C", "#F1A782", "#4B4A67", "#696047"];
 
   for (let i = 0; i < width; i += stripeWidth) {
     // pick a number between 0 and 11 (the length of the colors array)
