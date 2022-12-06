@@ -1,5 +1,9 @@
 body {
+    height: 100vh;
+    display: grid;
     background: #F6F1E3;
+    place-items: center;
+    padding: 5px
   }
 
 h1{
@@ -132,19 +136,21 @@ a:visited{
 hr {
     border-width: 1px;
     border: 4px solid #8B9E7E;  
+    margin: 10px
 }
 
 .navbar {
     display: flex;
     align-items: center;
     padding: 5px;
+    margin: 5px;
     background-color: #e5dec8;
     justify-content: space-around;
 }
   
 .navbar a {
     color:#B36A5E;
-    padding: 5px;
+    padding: 15px;
     text-decoration: none;
     text-align: center;
 }
@@ -173,7 +179,7 @@ hr {
     list-style: none;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 1px;
+    gap: 30px;
     justify-content: space-around;
 }
 
@@ -200,3 +206,53 @@ hr {
         justify-content: space-around;
     }
 }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .canvas {
+    width: 75vmin;
+    height: 75vmin;
+    background: hsl(0, 0%, 100%);
+    display: grid;
+    place-items: center;
+  }
+
+  button {
+    background: #B36A5E;
+    color: #F6F1E3;
+    border: none;
+    padding: 10px;
+    margin: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+
+  .button:hover {
+    background-color: #F6F1E3;
+    color: #B36A5E;
+  }
+
+  /* Create three equal columns that float next to each other */
+.column {
+    float: left;
+    width: 43.33%;
+    margin: 10px
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (600px wide or less) */
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+    }
+  }

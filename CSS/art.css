@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    background: #F6F1E3;
+  }
+  
+  .canvas {
+    width: 75vmin;
+    height: 75vmin;
+    background: hsl(0, 0%, 100%);
+  }
+
+  button {
+    position: absolute;
+    top: 1.5rem;
+    right: 43rem;
+    background: #B36A5E;
+    color: #F6F1E3;
+    border: none;
+    padding: 0.75em 2em;
+    cursor: pointer;
+    font-size: 16px;
+  }
+
+  .button:hover {
+    background-color: #F6F1E3;
+    color: #B36A5E;
+  }
