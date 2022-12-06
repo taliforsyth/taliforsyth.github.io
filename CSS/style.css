@@ -81,7 +81,6 @@ ol + ul{
     font-style: normal;
     font-weight: 700;
     font-size: 20px;
-    line-height: 23px;
     text-align: center;
 
     color: #5F634F;
@@ -92,8 +91,6 @@ li{
     font-family: 'Judson';
     font-style: normal;
     font-weight: 400;
-    font-size: 20px;
-    line-height: 23px;
     text-align: center;
 
     color: #5F634F;
@@ -161,10 +158,9 @@ hr {
 
 .image {
     list-style: none;
-    margin: 5px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 1px;
+    gap: 5px;
 }
 
 .other{
