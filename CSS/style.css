@@ -202,6 +202,16 @@ hr {
     }
 }
 
+@media (max-width: 500px){
+    .contact{
+        list-style: none;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1px;
+        justify-content: space-around;
+    }
+}
+
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (600px wide or less) */
   @media screen and (max-width: 500px) {
     .column {
